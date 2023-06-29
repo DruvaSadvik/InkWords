@@ -73,8 +73,8 @@
 									<div class="container-fluid">
 
 										<!-- Toggle get grouped for better mobile display -->
-										<div class="navbar-header">
-											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+										<div class="navbar-header" style="padding-top: 10px;" >
+											<button onclick="toggleNavbar()" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
 												<span class="sr-only">Toggle navigation</span>
 												<span class="icon-bar"></span>
 												<span class="icon-bar"></span>
@@ -83,8 +83,9 @@
 										</div>
 
 										<!-- Collect the nav links, forms, and other content for toggling -->
-										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1 " >
-											<ul class="nav navbar-nav navbar-right">
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1" >
+
+											<ul class="nav navbar-nav navbar-right" id="iconready">
 												<li class="active"><a href="#banner">Home</a></li>
 												<li><a href="search\search.html">Search</a></li>
 												<li><a href="#browse">Browse</a></li>
@@ -215,6 +216,7 @@
 				</div>
 			</div>
 		</div>
+	
 <!-- Dashboard ends -->
 	
 
@@ -229,15 +231,15 @@
 
 					
 				</div>
-				<div id="genres">
-					<button class="genre">Fiction</button>
-					<button class="genre">Mystery</button>
-					<button class="genre">Romance</button>
-					<button class="genre">Science Fiction</button>
-					<button class="genre">Fantasy</button>
-					<button class="genre">Thriller</button>
-					<button class="genre">Biography</button>
-					<button class="genre">History</button>
+				<div id="genres" >
+					<button style="margin: 20px;"class="genre" ><a href="/books-master/all_books.html" style="color: black;">Fiction</a></button>
+					<button style="margin: 20px;" class="genre"><a href="/books-master/all_books.html" style="color: black;">Mystery</a></button>
+					<button style="margin: 20px;" class="genre"><a href="/books-master/all_books.html" style="color: black;">Romance</a></button>
+					<button style="margin: 20px;" class="genre"><a href="/books-master/all_books.html" style="color: black;">Fantasy</a></button>
+					<button style="margin: 20px;" class="genre"><a href="/books-master/all_books.html" style="color: black;">Science</a> Fiction</button>
+					<button style="margin: 20px;" class="genre"><a href="/books-master/all_books.html" style="color: black;">Thrille</a>r</button>
+					<button style="margin: 20px;" class="genre"><a href="/books-master/all_books.html" style="color: black;">Biograp</a>hy</button>
+					<button style="margin: 20px;" class="genre"><a href="/books-master/all_books.html" style="color: black;">History</a></button>
 				  </div>
 				  
 				  <div id="book-list">
@@ -277,7 +279,7 @@
 							<div class="col-sm-6 col-md-3 isotope-item web-design">
 								<div class="image-box">
 									<div class="overlay-container">
-										<img src="images\bs1.webp" alt="">
+										<img  src="images\bs1.webp" alt="">
 										<a class="overlay" data-toggle="modal" data-target="#project-1">
 											<i class="fa fa-search-plus"></i>
 											 
@@ -475,7 +477,7 @@
 											<i class="fa fa-search-plus"></i> 
 										</a>
 									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-5">A Court of Mist and Fury (A Court of Thorns and Roses Series #2)</a>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-5">A Court of Mist and Fury</a>
 								</div>
 								<!-- Modal -->
 								<div class="modal fade" id="project-5" tabindex="-1" role="dialog" aria-labelledby="project-5-label" aria-hidden="true">
@@ -483,7 +485,7 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-												<h4 class="modal-title" id="project-5-label">A Court of Mist and Fury (A Court of Thorns and Roses Series #2)</h4>
+												<h4 class="modal-title" id="project-5-label">A Court of Mist and Fury </h4>
 											</div>
 											<div class="modal-body">
 												<div class="row">
@@ -572,71 +574,65 @@
 
 
 		<!-- Subscribtion Start -->
-	<div class="Subscribtion">
-		<section id="price" class="price-table secPadding">
-    	 <div class="container text-center"> 
-         <div class="heading">
-            <h1 class="text-center title" id="">Our Price</h1>
+		<div class="container">
+			<div class="heading">
+				<h1 class="text-center title">Our Price</h1>
 				<div class="separator"></div>
-				<p class="lead text-center">One Step Away<br> Lets start</p>
+				<p class="lead text-center">One Step Away -  Let's start</p>
 				<br>	
-          </div> 
-         	<div class="row" style="padding-left: 200px"> 
-            <div class="col-sm-3">
-              <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                  <h3>Basic</h3>
-                </div>
-                <div class="panel-body">
-                  <h3 class="panel-title price">$25</h3>
-                </div>
-                <ul class="list-group">
-                  <li class="list-group-item">50 Books/month</li>
-                  <li class="list-group-item">No Download</li>
-                  <li class="list-group-item">3 Devices</li>
-                  
-                  <li class="list-group-item"><a class="btn btn-default" href="login.html">Sign Up Now!</a></li>
-                </ul>
-              </div>          
-            </div>
-            <div class="col-sm-3">
-              <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                  <h3>Plus</h3>
-                </div>
-                <div class="panel-body">
-                  <h3 class="panel-title price">$100</span></h3>
-                </div>
-                <ul class="list-group">
-                  <li class="list-group-item">100 Books/month</li>
-                  <li class="list-group-item">Download upto 10 books</li>
-                  <li class="list-group-item">5 Devices</li>
-                  <li class="list-group-item"><a class="btn btn-default" href="login.html">Sign Up Now!</a></li>
-                </ul>
-              </div>          
-            </div>
-        
-            <div class="col-sm-3">
-              <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                  <h3>Ultimate</h3>
-                </div>
-                <div class="panel-body">
-                  <h3 class="panel-title price">$150</span></h3>
-                </div>
-                <ul class="list-group">
-                  <li class="list-group-item">Unlimited Books</li>
-                  <li class="list-group-item">Unlimited Download</li>
-                  <li class="list-group-item">Unlimited Devices</li>
-                  <li class="list-group-item"><a class="btn btn-default" href="login.html">Sign Up Now!</a></li>
-                </ul>
-              </div>          
-            </div>
-     
-          </div>
-         </div>      
-    	</section>
-	</div>
+			</div> 
+			<div class="row justify-content-center"> <!-- Use justify-content-center to center the columns -->
+				<div class="col-sm-6 col-md-4">
+					<div class="panel panel-default text-center">
+						<div class="panel-heading">
+							<h3>Basic</h3>
+						</div>
+						<div class="panel-body">
+							<h3 class="panel-title price">$25</h3>
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item">50 Books/month</li>
+							<li class="list-group-item">No Download</li>
+							<li class="list-group-item">3 Devices</li>
+							<li class="list-group-item"><a class="btn btn-default" href="login.html">Sign Up Now!</a></li>
+						</ul>
+					</div>          
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="panel panel-default text-center">
+						<div class="panel-heading">
+							<h3>Plus</h3>
+						</div>
+						<div class="panel-body">
+							<h3 class="panel-title price">$100</span></h3>
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item">100 Books/month</li>
+							<li class="list-group-item">Download up to 10 books</li>
+							<li class="list-group-item">5 Devices</li>
+							<li class="list-group-item"><a class="btn btn-default" href="login.html">Sign Up Now!</a></li>
+						</ul>
+					</div>          
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="panel panel-default text-center">
+						<div class="panel-heading">
+							<h3>Ultimate</h3>
+						</div>
+						<div class="panel-body">
+							<h3 class="panel-title price">$150</span></h3>
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item">Unlimited Books</li>
+							<li class="list-group-item">Unlimited Download</li>
+							<li class="list-group-item">Unlimited Devices</li>
+							<li class="list-group-item"><a class="btn btn-default" href="login.html">Sign Up Now!</a></li>
+						</ul>
+					</div>          
+				</div>
+			</div>
+		</div>
+		<div style="height: 50px;"> </div>
 	<!-- Subscribtion Ends -->
 
 		<!-- footer start --> 
