@@ -465,13 +465,30 @@ article {
   transform: scale(1);
 }
 
+.border-effect {
+  display: inline-block;
+  padding: 5px 5px;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #ff6b6b73, #55627080);
+  color: #040502c5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* justify-items:center; */
+}
+
+.border-effect:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
 .modal-content {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   overflow: auto;
   padding: 16px 32px;
-  max-width: 50%;
+  max-width: 800px;
   max-height: 80%;
   border-radius: 8px;
   background-color: var(--bg-color);
