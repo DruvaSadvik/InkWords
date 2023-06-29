@@ -1,8 +1,3 @@
-/* Author:WebThemez
- * Author URI:http://webthemez.com
- * License: Creative Commons Attribution 3.0 License (https://creativecommons.org/licenses/by/3.0/)
- */
-
 (function($){
 	$(document).ready(function(){
 	
@@ -62,7 +57,7 @@
 		}
 
 		// Animations
-		//-----------------------------------------------
+		// -----------------------------------------------
 		if (($("[data-animation-effect]").length>0) && !Modernizr.touch) {
 			$("[data-animation-effect]").each(function() {
 				var $this = $(this),
@@ -129,4 +124,7 @@ $(document).ready(function() {
 	preloader.classList.add('hide');
   });
   
-  
+  function toggleNavbar() {
+  var navbarLinks = document.getElementById("iconready");
+  navbarLinks.classList.toggle("active");
+}
