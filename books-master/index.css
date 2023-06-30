@@ -466,15 +466,22 @@ article {
 }
 
 .border-effect {
-  display: inline-block;
-  padding: 5px 5px;
-  border: 2px solid transparent;
-  border-radius: 50px;
-  background-image: linear-gradient(to right, #ff6b6b73, #55627080);
-  color: #040502c5;
+  color: #d01212;
+  padding: 15px 25px;
+  background-color: #46e9e9;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  width: 300px;
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
   cursor: pointer;
-  transition: all 0.3s ease;
-  /* justify-items:center; */
 }
 
 .border-effect:hover {
@@ -482,20 +489,27 @@ article {
   color: #fff;
 }
 
+
+
+
 .modal-content {
   position: relative;
   top: 50%;
   left: 50%;
   overflow: auto;
-  padding: 16px 32px;
-  max-width: 800px;
+  padding: 16px 200px;
+  max-width: 700px;
   max-height: 80%;
   border-radius: 8px;
+  background-image: url('https://img.freepik.com/free-vector/forest-scene-with-various-forest-trees_1308-58384.jpg?w=1380&t=st=1688101354~exp=1688101954~hmac=1266a15669067e1b4437ba5fd902c78c80824a8225b97cbb7ca1a982545dee1b');
   background-color: var(--bg-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%);
 }
 
+
+
+ 
 .fixed {
   position: fixed;
   top: 10%;
